@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		A4C64B35260EA333009E9882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C64B34260EA333009E9882 /* Preview Assets.xcassets */; };
 		A4C64B41260EA333009E9882 /* MacMDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C64B40260EA333009E9882 /* MacMDTests.swift */; };
 		A4C64B4C260EA333009E9882 /* MacMDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C64B4B260EA333009E9882 /* MacMDUITests.swift */; };
+		A4C64B5E260EA4D0009E9882 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = A4C64B5D260EA4D0009E9882 /* Ink */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C64B5E260EA4D0009E9882 /* Ink in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +150,9 @@
 			dependencies = (
 			);
 			name = MacMD;
+			packageProductDependencies = (
+				A4C64B5D260EA4D0009E9882 /* Ink */,
+			);
 			productName = MacMD;
 			productReference = A4C64B2A260EA332009E9882 /* MacMD.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +224,9 @@
 				Base,
 			);
 			mainGroup = A4C64B21260EA332009E9882;
+			packageReferences = (
+				A4C64B5C260EA4D0009E9882 /* XCRemoteSwiftPackageReference "Ink" */,
+			);
 			productRefGroup = A4C64B2B260EA332009E9882 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -585,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4C64B5C260EA4D0009E9882 /* XCRemoteSwiftPackageReference "Ink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Ink";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4C64B5D260EA4D0009E9882 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4C64B5C260EA4D0009E9882 /* XCRemoteSwiftPackageReference "Ink" */;
+			productName = Ink;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4C64B22260EA332009E9882 /* Project object */;
 }
